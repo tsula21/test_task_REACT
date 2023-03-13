@@ -200,9 +200,38 @@ h1 {
   flex-direction: column;
 }
 
+.filter_btn {
+  max-width: 130px;
+}
+
 @media screen and (min-width: 576px) {
   .users {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     width: unset;
+  }
+}
+
+@media (max-width: 1060px) {
+  .btn {
+    position: unset;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 690px) {
+  .container {
+    width: calc(100% - 50px);
+  }
+
+  .users_container {
+    width: 80%;
+  }
+  .sort {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter_btn:first-child {
+    margin: 10px !important;
   }
 }
